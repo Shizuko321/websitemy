@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Website Technology Project </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #264653;
+      --secondary: #2a9d8f;
+      --accent: #e9c46a;
+      --light: #f4f1de;
+      --dark: #1d3557;
+      --gap: 1rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.5;
+      padding: var(--gap);
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; background: var(--primary); padding: var(--gap) 2%; }
+    .logo { font-family: 'Lora', serif; color: var(--light); font-size: 1.5rem; }
+    nav ul { list-style: none; display: flex; gap: 1em; }
+    nav a { color: var(--light); font-weight: 600; text-decoration: none; }
+    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--secondary); height: 60vh; margin: var(--gap) 0; text-align: center; padding: 2% 0; }
+    .hero h1 { font-family: 'Lora', serif; font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1rem; }
+    .grid-container {
+      display: grid;
+      gap: var(--gap);
+    }
+    section h2 { font-family: 'Lora', serif; font-size: 1.75rem; margin-bottom: 0.5em; text-align: center; }
+    #favorites ul { list-style: disc inside; font-size: 1rem; }
+   
+    .grid-container { grid-template-columns: 1fr; }
+    
+    @media (min-width: 600px) {
+      .grid-container { grid-template-columns: repeat(2, 1fr); }
+    }
+    
+    @media (min-width: 900px) {
+      .grid-container { grid-template-columns: repeat(3, 1fr); }
+      body { padding: 2% 8%; }
+      .hero { height: 50vh; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Juan Ruiz</div>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#favorites">Favorites</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1>Juan Ruiz</h1>
+    <p>Student & Learner</p>
+  </header>
+  <div class="grid-container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Juan, a student passionate about web development and creativity!</p>
+    </section>
+    <section id="favorites">
+      <h2>Favorites</h2>
+      <ul>
+        <li>Favorite Music: Rap</li>
+        <li>Favorite Food: Sushi</li>
+      </ul>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+    </section>
+  </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
